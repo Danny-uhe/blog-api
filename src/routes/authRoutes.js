@@ -59,7 +59,7 @@ router.post("/register", register);
  *         description: Login successful
  */
 router.post("/login", login);
-
+export default router;
 
 
 
