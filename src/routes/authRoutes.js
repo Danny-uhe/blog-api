@@ -1,3 +1,8 @@
+import express from "express";
+import { register, login } from "../controllers/authController.js";
+
+const router = express.Router();
+
 /**
  * @swagger
  * tags:
@@ -59,6 +64,7 @@ router.post("/register", register);
  *         description: Login successful
  */
 router.post("/login", login);
+
 export default router;
 
 
